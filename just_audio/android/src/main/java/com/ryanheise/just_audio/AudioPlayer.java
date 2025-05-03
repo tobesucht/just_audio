@@ -723,7 +723,7 @@ public class AudioPlayer implements MethodCallHandler, Player.Listener, Metadata
             .setUserAgent(userAgent)
             .setAllowCrossProtocolRedirects(true)
             .setConnectTimeoutMs(30_000)   // 30 s connect timeout
-            .setReadTimeoutMs(30_000)      // 30 s read timeout;
+            .setReadTimeoutMs(30_000);     // 30 s read timeout
         if (stringHeaders != null && stringHeaders.size() > 0) {
             httpDataSourceFactory.setDefaultRequestProperties(stringHeaders);
         }
